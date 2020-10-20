@@ -75,7 +75,7 @@ module.exports = {
 
             //图片文件
             {
-                test: /\.(bmp|png|jpg|jpeg|ico|gif|webp)$/,
+                test: /\.(bmp|png|jpg|jpeg|ico|gif|webp|svg)$/,
                 use: [{
                         loader: 'url-loader',
                         options: {
@@ -110,7 +110,7 @@ module.exports = {
             },
             //字体文件处理
             {
-                test: /\.(eot|ttf|woff|svg|woff2)$/,
+                test: /\.(eot|ttf|woff|woff2)$/,
                 use: [{
                         loader: 'file-loader',
                         options: {
@@ -160,8 +160,8 @@ module.exports = {
 
     output: {
         filename: 'js/[name].js',
+        path: path.join(__dirname, '../dist/'), //打包文件路径
         //publicPath: 'https://cdn2020.xiaolong0418.com/navigation', //文件前面加cdn地址
-        path: path.join(__dirname, '../dist/') //打包文件路径
 
     },
 

@@ -1,10 +1,12 @@
 {
-    presets: [
+    "presets":  [
         ["@babel/preset-env", {
-            targets: {
-                chrome: "67"
+            "corejs": "2.6.11",
+            "targets":  {
+                "esmodules": true,
+                "ie": "11"
             },
-            useBuiltIns: 'usage' //按需引用对象解析
+            "useBuiltIns": "usage"//按需引用对象解析
         }]
     ]
 
