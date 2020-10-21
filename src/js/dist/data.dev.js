@@ -1,26 +1,6 @@
 "use strict";
 
-//锚点效果
-$(function () {
-  //锚点跳转滑动效果
-  $('a[href*=#],area[href*=#]').click(function () {
-    console.log(this.pathname);
-
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var $target = $(this.hash);
-      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-
-      if ($target.length) {
-        var targetOffset = $target.offset().top;
-        $('html,body').animate({
-          scrollTop: targetOffset
-        }, 300);
-        return false;
-      }
-    }
-  });
-}); // 网站数据
-
+// 网站数据
 var nav = new Vue({
   el: '#navItem',
   data: {
@@ -381,16 +361,6 @@ var boxList = new Vue({
         name: 'Electron',
         text: '桌面js框架'
       }, {
-        href: 'https://github.com/sprov065/v2-ui',
-        src: require('../images/V2ray.ico')["default"],
-        name: 'V2-UI',
-        text: 'V2ray多用户管理'
-      }, {
-        href: 'https://www.v2ray.com/',
-        src: require('../images/V2ray.ico')["default"],
-        name: 'V2ray',
-        text: 'V2ray代理文档'
-      }, {
         href: 'https://docs.v2board.com/',
         src: require('../images/V2Board.png')["default"],
         name: 'V2Board',
@@ -400,11 +370,6 @@ var boxList = new Vue({
         src: require('../images/GitHub.ico')["default"],
         name: 'V2ray-Poseidon',
         text: 'V2ray机场后端文档'
-      }, {
-        href: 'https://xiaota.me/2020/02/23/2020-02-23/',
-        src: require('../images/V2ray-Poseidon.png')["default"],
-        name: 'V2ray-Poseidon',
-        text: '节点对接文档'
       }, {
         href: 'https://github.com/sprov065/soga/wiki',
         src: require('../images/GitHub.ico')["default"],
@@ -610,11 +575,6 @@ var boxList = new Vue({
         src: require('../images/PayPal.ico')["default"],
         name: 'PayPal',
         text: '外国第三方支付平台'
-      }, {
-        href: 'http://v1.paytaro.com/#/login',
-        src: require('../images/PayPal.ico')["default"],
-        name: 'Paytaro',
-        text: '开发者收款'
       }]
     }, {
       name: 'Tools',
@@ -881,6 +841,11 @@ var boxList = new Vue({
         name: '电影天堂',
         text: '磁力电影'
       }, {
+        href: 'https://www.agefans.tv/',
+        src: require('../images/AGE动漫.ico')["default"],
+        name: 'AGE动漫',
+        text: '动漫网站'
+      }, {
         href: 'https://www.zxzj.me/',
         src: require('../images/在线之家.ico')["default"],
         name: '在线之家',
@@ -1065,11 +1030,6 @@ var boxList = new Vue({
         src: require('../images/极光KVM.ico')["default"],
         name: '水墨云',
         text: '美国大带宽服务器'
-      }, {
-        href: 'https://9shost.com/aff.php?aff=257',
-        src: require('../images/死海网络.png')["default"],
-        name: '死海网络',
-        text: '跑路了'
       }, {
         href: 'https://www.xiuluohost.com/?aff=67904',
         src: require('../images/修罗云.ico')["default"],

@@ -435,18 +435,6 @@ var boxList = new Vue({
                         text: '桌面js框架'
                     },
                     {
-                        href: 'https://github.com/sprov065/v2-ui',
-                        src:  require('../images/V2ray.ico').default,
-                        name: 'V2-UI',
-                        text: 'V2ray多用户管理'
-                    },
-                    {
-                        href: 'https://www.v2ray.com/',
-                        src:  require('../images/V2ray.ico').default,
-                        name: 'V2ray',
-                        text: 'V2ray代理文档'
-                    },
-                    {
                         href: 'https://docs.v2board.com/',
                         src:  require('../images/V2Board.png').default,
                         name: 'V2Board',
@@ -457,12 +445,6 @@ var boxList = new Vue({
                         src:  require('../images/GitHub.ico').default,
                         name: 'V2ray-Poseidon',
                         text: 'V2ray机场后端文档'
-                    },
-                    {
-                        href: 'https://xiaota.me/2020/02/23/2020-02-23/',
-                        src:  require('../images/V2ray-Poseidon.png').default,
-                        name: 'V2ray-Poseidon',
-                        text: '节点对接文档'
                     },
                     {
                         href: 'https://github.com/sprov065/soga/wiki',
@@ -709,12 +691,6 @@ var boxList = new Vue({
                         src:  require('../images/PayPal.ico').default,
                         name: 'PayPal',
                         text: '外国第三方支付平台'
-                    },
-                    {
-                        href: 'http://v1.paytaro.com/#/login',
-                        src:  require('../images/PayPal.ico').default,
-                        name: 'Paytaro',
-                        text: '开发者收款'
                     }
                 ]
             },
@@ -1263,12 +1239,6 @@ var boxList = new Vue({
                         src:  require('../images/极光KVM.ico').default,
                         name: '水墨云',
                         text: '美国大带宽服务器'
-                    },
-                    {
-                        href: 'https://9shost.com/aff.php?aff=257',
-                        src:  require('../images/死海网络.png').default,
-                        name: '死海网络',
-                        text: '跑路了'
                     },
                      {
                         href: 'https://www.xiuluohost.com/?aff=67904',
