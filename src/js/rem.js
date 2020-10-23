@@ -2,7 +2,7 @@
 
 $(function () {
   //锚点跳转滑动效果
-  $('a[href*=#],area[href*=#]').click(function () {
+  $('a[href*=\\#],area[href*=\\#]').click(function () {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
           var $target = $(this.hash);
           $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');

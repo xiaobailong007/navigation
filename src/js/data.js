@@ -1591,6 +1591,12 @@ var boxList = new Vue({
                         text: 'API接口测试'
                     },
                     {
+                        href: 'https://www.sourcetreeapp.com/',
+                        src:  require('../images/Sourcetree.ico').default,
+                        name: 'Sourcetree',
+                        text: '图形化Git客户端'
+                    },
+                    {
                         href: 'https://www.xftsoft.com/',
                         src:  require('../images/小飞兔.ico').default,
                         name: '小飞兔',

@@ -12,7 +12,7 @@ const commonConfig = require('./webpack.common');
 
     //启动一个服务器
     devServer: {
-        contentBase: path.join(__dirname, "../dist"), //服务器文件根路径
+        contentBase: path.join(__dirname, "dist"), //服务器文件根路径
         compress: true, //启用gzip 压缩
         open: true, //启用时，开发服务器将打开浏览
         port: 8002, //提供访问的端口

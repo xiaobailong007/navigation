@@ -12,19 +12,7 @@ const prodConfig = {
     //上线
     mode: 'production', //指定模块配置
     devtool: 'cheap-module+-source-map', //报错直接映射到源文件
-    optimization: {
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
-        splitChunks: {
-          cacheGroups: {
-            styles: {
-              name: 'styles',
-              test: /\.css$/,
-              chunks: 'all',
-              enforce: true,
-            },
-          }
-        },
-      }
+
     
 }
 
