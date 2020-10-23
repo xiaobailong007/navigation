@@ -266,6 +266,16 @@ var boxList = new Vue({
         name: 'w3school',
         text: '文档集合'
       }, {
+        href: 'https://www.sass.hk/',
+        src: require('../images/Sass.ico')["default"],
+        name: 'Sass',
+        text: 'CSS扩展语言'
+      }, {
+        href: 'https://daneden.github.io/animate.css/',
+        src: require('../images/GitHub.ico')["default"],
+        name: 'Animate',
+        text: 'CSS动画库'
+      }, {
         href: 'https://www.layui.com/doc/',
         src: require('../images/layui.ico')["default"],
         name: 'LaYui',
@@ -285,6 +295,21 @@ var boxList = new Vue({
         src: require('../images/jQuery插件库.ico')["default"],
         name: 'jQuery插件库',
         text: 'jQuery插件库'
+      }, {
+        href: 'https://www.swiper.com.cn/api/index.html',
+        src: require('../images/Swiper.ico')["default"],
+        name: 'Swiper',
+        text: '内容触摸滑动插件'
+      }, {
+        href: 'https://echarts.apache.org/zh/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts',
+        src: require('../images/ECharts.png')["default"],
+        name: 'ECharts',
+        text: 'JS图形库'
+      }, {
+        href: 'https://threejs.org/docs/index.html#manual/zh/introduction/Creating-a-scene',
+        src: require('../images/Three.ico')["default"],
+        name: 'Three.js',
+        text: 'JS三维模型框架'
       }, {
         href: 'https://es6.ruanyifeng.com/#README',
         src: require('../images/ES6.ico')["default"],
@@ -321,11 +346,6 @@ var boxList = new Vue({
         name: 'NuxtJS',
         text: 'VUE框架'
       }, {
-        href: 'https://www.webpackjs.com/',
-        src: require('../images/webpack.ico')["default"],
-        name: 'Webpack',
-        text: '打包工具'
-      }, {
         href: 'https://mp.weixin.qq.com',
         src: require('../images/微信公众平台.ico')["default"],
         name: '微信公众平台',
@@ -336,31 +356,6 @@ var boxList = new Vue({
         name: '微信官方文档',
         text: '微信官方文档'
       }, {
-        href: 'https://daneden.github.io/animate.css/',
-        src: require('../images/GitHub.ico')["default"],
-        name: 'Animate',
-        text: 'CSS动画库'
-      }, {
-        href: 'https://www.sass.hk/',
-        src: require('../images/Sass.ico')["default"],
-        name: 'Sass',
-        text: 'CSS扩展语言'
-      }, {
-        href: 'https://www.swiper.com.cn/api/index.html',
-        src: require('../images/Swiper.ico')["default"],
-        name: 'Swiper',
-        text: '内容触摸滑动插件'
-      }, {
-        href: 'https://echarts.apache.org/zh/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts',
-        src: require('../images/ECharts.png')["default"],
-        name: 'ECharts',
-        text: 'JS图形库'
-      }, {
-        href: 'https://threejs.org/docs/index.html#manual/zh/introduction/Creating-a-scene',
-        src: require('../images/Three.ico')["default"],
-        name: 'Three.js',
-        text: 'JS三维模型框架'
-      }, {
         href: 'https://eggjs.org/en/intro/quickstart.html',
         src: require('../images/Eggjs.png')["default"],
         name: 'Eggjs',
@@ -370,6 +365,11 @@ var boxList = new Vue({
         src: require('../images/Electron.ico')["default"],
         name: 'Electron',
         text: '桌面js框架'
+      }, {
+        href: 'https://www.webpackjs.com/',
+        src: require('../images/webpack.ico')["default"],
+        name: 'Webpack',
+        text: '打包工具'
       }, {
         href: 'https://docs.v2board.com/',
         src: require('../images/V2Board.png')["default"],
