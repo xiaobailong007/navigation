@@ -345,10 +345,22 @@ var boxList = new Vue({
                         text: 'jQuery插件库'
                     },
                     {
+                        href: 'https://es6.ruanyifeng.com/#README',
+                        src:  require('../images/ES6.ico').default,
+                        name: 'ES6',
+                        text: 'ECMAScript 6 入门教程'
+                    },
+                    {
                         href: 'https://vuejs.org/',
                         src:  require('../images/Vue.png').default,
                         name: 'Vue',
                         text: '渐进式前端框架'
+                    },
+                    {
+                        href: 'https://zh-hans.reactjs.org/tutorial/tutorial.html',
+                        src:  require('../images/React.ico').default,
+                        name: 'React',
+                        text: '用于构建用户界面的js库'
                     },
                     {
                         href: 'https://uniapp.dcloud.io/component/README',
