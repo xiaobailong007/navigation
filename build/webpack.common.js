@@ -98,6 +98,7 @@ module.exports = {
               name: '[name].[ext]',
               // 图片输出的实际路径(相对于dist)
               outputPath: 'images',
+              publicPath: './images'
 
 
             }
