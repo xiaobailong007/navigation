@@ -99,8 +99,7 @@ module.exports = {
               // 图片输出的实际路径(相对于dist)
               outputPath: 'images',
               publicPath: './images'
-
-
+              //publicPath: 'https://cdn2020.xiaolong0418.com/navigation/images'
             }
           },
           /*对图片进行压缩*/
@@ -198,6 +197,7 @@ module.exports = {
   output: {
     filename: 'js/[name].js',
     path: path.join(__dirname, '../dist'), //打包文件路径
+    //publicPath: 'https://cdn2020.xiaolong0418.com/navigation//'
 
   },
 
