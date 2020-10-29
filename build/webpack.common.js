@@ -91,7 +91,7 @@ module.exports = {
       {
         test: /\.(bmp|png|jpg|jpeg|ico|gif|webp|svg)$/,
         use: [{
-            loader: 'url-loader',
+            loader: 'file-loader',
             options: {
               limit: 1, // 当图片小于1 k时 用base64转换
               /* 图片大小小于1000字节限制时会自动转成 base64 码引用*/

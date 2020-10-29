@@ -20,6 +20,7 @@ const devConfig = {
         port: 8002, //提供访问的端口
         // hot: true, //热更新
         // hotOnly: true,
+        historyApiFallback:true,//解决路由问题
         //跨域请求
         proxy: {
             '/api': {
