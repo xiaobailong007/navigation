@@ -29,6 +29,8 @@ module.exports = {
     rem: './src/js/rem.js'
   },
 
+
+  
   module: {
     rules: [
       //index文件
@@ -93,8 +95,7 @@ module.exports = {
         use: [{
             loader: 'file-loader',
             options: {
-              limit: 1, // 当图片小于1 k时 用base64转换
-              /* 图片大小小于1000字节限制时会自动转成 base64 码引用*/
+              limit: 1, // 当图片小于1 k时 自动用base64转换
               name: '[name].[ext]',
               // 图片输出的实际路径(相对于dist)
               outputPath: 'images',
@@ -106,22 +107,27 @@ module.exports = {
           {
             loader: 'image-webpack-loader',
             options: {
+              // 压缩 jpeg 的配置
               mozjpeg: {
                 progressive: true,
               },
+              // 使用 imagemin**-optipng 压缩 png，enable: false 为关闭
               optipng: {
                 enabled: false,
               },
+              // 使用 imagemin-pngquant 压缩 png
               pngquant: {
                 quality: [0.65, 0.90],
                 speed: 4
               },
+              // 压缩 gif 的配置
               gifsicle: {
                 interlaced: false,
               },
-              webp: {
-                quality: 75
-              }
+              // 开启 webp，会把 jpg 和 png 图片压缩为 webp 格式,建议不要开启，ios14系统以下的手机，图片回不显示
+              // webp: {
+              //   quality: 75
+              // }
             }
           }
         ]
@@ -143,6 +149,9 @@ module.exports = {
       //es6解决兼用性问题
       {
         test: /\.js$/,
+        // 只在 src 文件夹下查找
+        //include: [resolve('src')],
+        // 不会去查找的路径
         exclude: /node_modules/,
         loader: "babel-loader",
 
@@ -175,6 +184,8 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
 
+    
+
   ],
 
   //可以删除未使用的资源。
@@ -200,5 +211,7 @@ module.exports = {
     //publicPath: 'https://cdn2020.xiaolong0418.com/navigation//'
 
   },
+
+  
 
 }
