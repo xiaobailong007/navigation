@@ -124,7 +124,7 @@ module.exports = {
               gifsicle: {
                 interlaced: false,
               },
-              // 开启 webp，会把 jpg 和 png 图片压缩为 webp 格式,建议不要开启，ios14系统以下的手机，图片回不显示
+              // 开启 webp，会把 jpg 和 png 图片压缩为 webp 格式,建议不要开启，ios14以下系统不支持webp
               // webp: {
               //   quality: 75
               // }
