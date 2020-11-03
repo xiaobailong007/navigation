@@ -19,8 +19,6 @@ $(function () {
 })
 
 
-
-
 var oMenu = document.getElementById('menu');
 var oBtn = oMenu.getElementsByTagName('a')[0];
 var oLeftBar = document.getElementById('leftBar');
