@@ -637,12 +637,6 @@ var boxList = new Vue({
             text: '后端数据模拟'
           },
           {
-            href: 'https://cli.im/',
-            src: require('../images/草料二维码.ico').default,
-            name: '草料二维码',
-            text: '生成二维码'
-          },
-          {
             href: 'http://www.zuohaotu.com/',
             src: require('../images/做好图.ico').default,
             name: '做好图',
@@ -851,6 +845,13 @@ var boxList = new Vue({
             src: require('../images/草料二维码.ico').default,
             name: '草料二维码',
             text: '生成二维码'
+          },
+          {
+            href: 'https://chrome.google.com/webstore/category/themes?hl=zh-CN',
+            src: require('../images/谷歌浏览器.svg').default,
+            name: 'chrome 网上应用店',
+            text: '谷歌浏览器插件'
+
           },
           {
             href: 'http://www.10jqka.com.cn/',
@@ -1320,12 +1321,12 @@ var boxList = new Vue({
             name: '服务器-于龙',
             text: '宝塔管理界面'
           },
-          {
-            href: 'http://weixin1.bainiaoming.com:8011/js/public/index/index/index.html',
-            src: require('../images/wx.ico').default,
-            name: '微信换号系统',
-            text: '管理界面'
-          },
+          // {
+          //   href: 'http://weixin1.bainiaoming.com:8011/js/public/index/index/index.html',
+          //   src: require('../images/wx.ico').default,
+          //   name: '微信换号系统',
+          //   text: '管理界面'
+          // },
           {
             href: 'http://wx.yaoqianshu888.cn/index.php/wx/Index/index.html',
             src: require('../images/wx.ico').default,
@@ -1343,6 +1344,12 @@ var boxList = new Vue({
             src: require('../images/V2Board.png').default,
             name: '合资小分队',
             text: '节点管理'
+          },
+          {
+            href: 'https://note.youdao.com/web/#/file/recent/markdown/WEB80575f5bd4619671a7ad032db131fd6b/',
+            src: require('../images/有道云笔记.ico').default,
+            name: '有道云笔记',
+            text: '云端笔记'
           },
           {
             href: 'https://www.namecheap.com/',
@@ -1373,13 +1380,6 @@ var boxList = new Vue({
             src: require('../images/Cloudflare.ico').default,
             name: 'STEAMSV',
             text: '流媒体解锁'
-          },
-          {
-            href: 'https://chrome.google.com/webstore/category/themes?hl=zh-CN',
-            src: require('../images/谷歌浏览器.svg').default,
-            name: 'chrome 网上应用店',
-            text: '谷歌浏览器插件'
-
           }
         ]
       },
