@@ -11,7 +11,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const prodConfig = {
     //上线
     mode: 'production', //指定模块配置
-    devtool: 'cheap-module+-source-map', //报错直接映射到源文件
+    devtool: 'eval-cheap-module-souce-map', //报错直接映射到源文件
 
     
 }

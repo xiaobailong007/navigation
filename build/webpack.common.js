@@ -7,11 +7,16 @@ const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
 
-const TerserJSPlugin = require('terser-webpack-plugin');
+
+
+//分离css代码
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 //压缩css代码
 const opimizeCss = require('optimize-css-assets-webpack-plugin');
+
+
+const TerserJSPlugin = require('terser-webpack-plugin');
 
 //压缩js代码
 const uglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin')
@@ -30,7 +35,7 @@ module.exports = {
   },
 
 
-  
+
   module: {
     rules: [
       //index文件
@@ -64,6 +69,7 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/, // 可以打包后缀为sass/scss/css的文件
         use: [{
+            //提取js中的css成单独文件
             loader: MiniCssExtractPlugin.loader,
             options: {
               // css中的图片路径增加前缀
@@ -79,7 +85,13 @@ module.exports = {
           },
 
           {
-            loader: "postcss-loader" //添加前缀的，解决浏览器兼容问题
+            loader: "postcss-loader", //添加前缀的，解决浏览器兼容问题
+            // options: {
+            //   ident: 'postcss',
+            //   plugins: () => [
+            //     require('postcss-preset-env')(),
+            //   ],
+            // },
           },
 
           {
@@ -146,6 +158,17 @@ module.exports = {
         }]
       },
 
+      //音频文件
+      {
+        test: /\.(mp3|mp4|avi|mov)$/,
+        loader: 'url-loader',
+        options: {
+          name: 'audios/[name].[ext]',
+          limit: 10
+        }
+      },
+
+
       //es6解决兼用性问题
       {
         test: /\.js$/,
@@ -170,8 +193,14 @@ module.exports = {
       favicon: './favicon.ico', // 添加小图标
       //hash: true, // 添加哈希,避免缓存
       minify: { // 对html也进行压缩
-        removeAttributeQuotes: true, // 删除双引号
-        collapseWhitespace: true, // 折叠为一行
+        // 删除双引号
+        removeAttributeQuotes: true,
+        // 折叠为一行
+        collapseWhitespace: true,
+        // 移除空格
+        collapseWhitespace: true,
+        // 移除注释
+        removeComments: true
       }
     }),
     //打包前清除dist文件夹
@@ -184,14 +213,16 @@ module.exports = {
       chunkFilename: '[id].css',
     }),
 
-    
+
 
   ],
 
   //可以删除未使用的资源。
   optimization: {
     minimizer: [
-      new TerserJSPlugin({}),
+      new TerserJSPlugin({
+        sourceMap: true,
+      }),
 
       //压缩js代码
       new opimizeCss(),
@@ -212,6 +243,6 @@ module.exports = {
 
   },
 
-  
+
 
 }

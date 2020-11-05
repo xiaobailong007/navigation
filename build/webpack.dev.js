@@ -10,7 +10,7 @@ const commonConfig = require('./webpack.common');
 const devConfig = {
     //开发
     mode: 'development', //指定模块配置
-    devtool: 'cheap-module-eval-source-map', //报错直接映射到源文件
+    devtool: 'eval-cheap-module-souce-map', //报错直接映射到源文件
 
     //启动一个服务器
     devServer: {
