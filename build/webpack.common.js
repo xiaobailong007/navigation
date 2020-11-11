@@ -220,18 +220,43 @@ module.exports = {
   //可以删除未使用的资源。
   optimization: {
     minimizer: [
+
+
+      // 压缩CSS
+      new opimizeCss(),
+
+      //压缩es6语法
       new TerserJSPlugin({
-        sourceMap: true,
+        cache: true, //是否缓存
+        parallel: true, //是否并发打包，同时打包多个文件
+        sourceMap: true //打包后的代码与源码的映射，方便调试
       }),
 
-      //压缩js代码
-      new opimizeCss(),
 
       //压缩js代码
       new uglifyJsWebpackPlugin({
         cache: true, //是否缓存
         parallel: true, //是否并发打包，同时打包多个文件
-        sourceMap: true //打包后的代码与源码的映射，方便调试
+        sourceMap: true, //打包后的代码与源码的映射，方便调试
+        uglifyOptions: {
+          // 在UglifyJs删除没有用到的代码时不输出警告
+          warnings: false,
+          output: {
+            // 删除所有的注释
+            comments: false,
+            // 最紧凑的输出
+            beautify: false
+          },
+          compress: {
+            // 删除所有的 `console` 语句
+            // 还可以兼容ie浏览器
+            drop_console: true,
+            // 内嵌定义了但是只用到一次的变量
+            collapse_vars: true,
+            // 提取出出现多次但是没有定义成变量去引用的静态值
+            reduce_vars: true,
+          }
+        }
       })
     ],
   },
