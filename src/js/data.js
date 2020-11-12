@@ -775,15 +775,15 @@ var boxList = new Vue({
             text: '找工作,先看准'
           },
           {
+            href: 'http://www.gdzwfw.gov.cn/',
+            src: require('../images/gdzwfw.ico').default,
+            name: '广州政务服务网',
+            text: '电子服务中心'
+          },
+          {
             href: 'https://fabiaoqing.com/',
             src: require('../images/发表情包.png').default,
             name: '发表情包',
-            text: '尔等可敢一战'
-          },
-          {
-            href: 'https://www.weshineapp.com/',
-            src: require('../images/闪萌.ico').default,
-            name: '闪萌',
             text: '尔等可敢一战'
           },
           {
@@ -1202,12 +1202,6 @@ var boxList = new Vue({
             text: '有信用卡可以白嫖一年'
           },
           {
-            href: 'https://www.vultr.com/?ref=8205489',
-            src: require('../images/vultr.png').default,
-            name: 'Vultr',
-            text: '按小时计费'
-          },
-          {
             href: 'https://www.vultr.com/?ref=8439176-6G',
             src: require('../images/vultr.png').default,
             name: 'Vultr',
@@ -1294,25 +1288,13 @@ var boxList = new Vue({
           {
             href: 'http://45.133.119.107:43990/',
             src: require('../images/宝塔面板.ico').default,
-            name: 'V2Board',
-            text: '宝塔管理界面'
-          },
-          {
-            href: 'http://114.55.248.122:4399/c746da01/',
-            src: require('../images/宝塔面板.ico').default,
-            name: '阿里云',
+            name: '服务器-小白龙',
             text: '宝塔管理界面'
           },
           {
             href: 'http://121.40.29.227:8888/36979603/',
             src: require('../images/宝塔面板.ico').default,
-            name: '服务器-火龙-主',
-            text: '宝塔管理界面'
-          },
-          {
-            href: 'http://121.40.109.178:8888/3f23d1ea',
-            src: require('../images/宝塔面板.ico').default,
-            name: '服务器-火龙-副',
+            name: '服务器-火龙',
             text: '宝塔管理界面'
           },
           {
@@ -1321,12 +1303,6 @@ var boxList = new Vue({
             name: '服务器-于龙',
             text: '宝塔管理界面'
           },
-          // {
-          //   href: 'http://weixin1.bainiaoming.com:8011/js/public/index/index/index.html',
-          //   src: require('../images/wx.ico').default,
-          //   name: '微信换号系统',
-          //   text: '管理界面'
-          // },
           {
             href: 'http://wx.yaoqianshu888.cn/index.php/wx/Index/index.html',
             src: require('../images/wx.ico').default,
