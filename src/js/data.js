@@ -428,6 +428,12 @@ var boxList = new Vue({
             text: '微信官方文档'
           },
           {
+            href: 'https://doc.mini.talelin.com/start/',
+            src: require('../images/Lin-UI.ico').default,
+            name: 'Lin-UI',
+            text: '原生微信小程序框架'
+          },
+          {
             href: 'https://eggjs.org/en/intro/quickstart.html',
             src: require('../images/Eggjs.png').default,
             name: 'Eggjs',
