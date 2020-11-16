@@ -229,6 +229,12 @@ var boxList = new Vue({
             text: '程序员面试学习网站'
           },
           {
+            href: 'https://blog.poetries.top/FE-Interview-Questions/docs/base.html',
+            src: require('../images/FE-Interview.png').default,
+            name: 'FE-Interview',
+            text: '程序员面试学习网站'
+          },
+          {
             href: 'http://www.xiachufang.com/',
             src: require('../images/下厨房.ico').default,
             name: '下厨房',
@@ -331,6 +337,12 @@ var boxList = new Vue({
             text: 'CSS动画库'
           },
           {
+            href: 'https://chokcoco.github.io/CSS-Inspiration/#/./init',
+            src: require('../images/CSS-Inspiration.png').default,
+            name: 'CSS-Inspiration',
+            text: 'CSS灵感'
+          },
+          {
             href: 'https://www.layui.com/doc/',
             src: require('../images/layui.ico').default,
             name: 'LaYui',
@@ -391,6 +403,12 @@ var boxList = new Vue({
             text: '用于构建用户界面的js库'
           },
           {
+            href: 'https://hexo.io/zh-cn/docs/',
+            src: require('../images/Hexo.png').default,
+            name: 'Hexo',
+            text: '博客框架'
+          },
+          {
             href: 'https://uniapp.dcloud.io/component/README',
             src: require('../images/Uni-app.png').default,
             name: 'Uni-app',
@@ -406,6 +424,12 @@ var boxList = new Vue({
             href: 'https://element.eleme.cn/#/zh-CN/component/installation',
             src: require('../images/Element.ico').default,
             name: 'Element',
+            text: 'PC响应式框架'
+          },
+          {
+            href: 'https://2x.antdv.com/docs/vue/introduce-cn/',
+            src: require('../images/Ant-Design.ico').default,
+            name: 'Ant Design of Vue',
             text: 'PC响应式框架'
           },
           {
@@ -619,10 +643,34 @@ var boxList = new Vue({
             text: 'SSL证书申请'
           },
           {
+            href: 'https://www.gitbook.com/',
+            src: require('../images/GitBook.ico').default,
+            name: 'GitBook',
+            text: '记录一切'
+          },
+          {
+            href: 'https://www.yuque.com/dashboard',
+            src: require('../images/yuque.png').default,
+            name: '语雀',
+            text: '专业的云端知识库'
+          },
+          {
+            href: 'https://note.youdao.com/web/#/file/recent/markdown/WEB80575f5bd4619671a7ad032db131fd6b/',
+            src: require('../images/有道云笔记.ico').default,
+            name: '有道云笔记',
+            text: '云端笔记'
+          },
+          {
             href: 'https://tool.lu/',
             src: require('../images/在线工具.ico').default,
             name: '在线工具',
             text: '工具集合'
+          },
+          {
+            href: 'https://www.npmjs.com/',
+            src: require('../images/NPM.png').default,
+            name: 'NPM',
+            text: 'Node软件包管理器'
           },
           {
             href: 'https://www.toptal.com/developers/css/sprite-generator',
@@ -631,16 +679,16 @@ var boxList = new Vue({
             text: '多图合一'
           },
           {
-            href: 'https://www.gitbook.com/',
-            src: require('../images/GitBook.ico').default,
-            name: 'GitBook',
-            text: '记录一切'
-          },
-          {
             href: 'https://www.easy-mock.com/',
             src: require('../images/Easy-Mock.ico').default,
             name: 'Easy-Mock',
             text: '后端数据模拟'
+          },
+          {
+            href: 'https://caniuse.com/',
+            src: require('../images/caniuse.png').default,
+            name: 'caniuse',
+            text: '浏览器支持表'
           },
           {
             href: 'http://www.zuohaotu.com/',
@@ -1326,12 +1374,6 @@ var boxList = new Vue({
             src: require('../images/V2Board.png').default,
             name: '合资小分队',
             text: '节点管理'
-          },
-          {
-            href: 'https://note.youdao.com/web/#/file/recent/markdown/WEB80575f5bd4619671a7ad032db131fd6b/',
-            src: require('../images/有道云笔记.ico').default,
-            name: '有道云笔记',
-            text: '云端笔记'
           },
           {
             href: 'https://www.namecheap.com/',

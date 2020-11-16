@@ -2,12 +2,6 @@
 const path = require('path')
 //引入plugin可以在webpack运行到某个时刻的时候，帮你做一些事情
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//打包前删除之前的打包文件
-const {
-  CleanWebpackPlugin
-} = require('clean-webpack-plugin');
-
-
 
 //分离css代码
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -150,16 +144,11 @@ module.exports = {
         removeComments: true
       }
     }),
-    //打包前清除dist文件夹
-    new CleanWebpackPlugin({
-      cleanAfterEveryBuildPatterns: ['dist']
-    }),
 
     new MiniCssExtractPlugin({
       filename: 'css/[name].css', // 抽离出的css文件名
       chunkFilename: '[id].css',
-    }),
-
+    })
 
 
   ],
