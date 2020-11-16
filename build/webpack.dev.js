@@ -18,17 +18,16 @@ const devConfig = {
             {
                 test: /\.(bmp|png|jpg|jpeg|ico|gif|webp|svg)$/,
                 use: [{
-                        loader: 'file-loader',
-                        options: {
-                            limit: 1, // 当图片小于1 k时 自动用base64转换
-                            name: '[name].[ext]',
-                            // 图片输出的实际路径(相对于dist)
-                            outputPath: 'images',
-                            publicPath: './images'
-                            //publicPath: 'https://cdn2020.xiaolong0418.com/navigation/images'
-                        }
+                    loader: 'file-loader',
+                    options: {
+                        limit: 1, // 当图片小于1 k时 自动用base64转换
+                        name: '[name].[ext]',
+                        // 图片输出的实际路径(相对于dist)
+                        outputPath: 'images',
+                        publicPath: './images'
+                        //publicPath: 'https://cdn2020.xiaolong0418.com/navigation/images'
                     }
-                ]
+                }]
             }
         ]
     },
@@ -41,7 +40,7 @@ const devConfig = {
         port: 8002, //提供访问的端口
         // hot: true, //热更新
         // hotOnly: true,
-        historyApiFallback:true,//解决路由问题
+        historyApiFallback: true, //解决路由问题
         //跨域请求
         proxy: {
             '/api': {

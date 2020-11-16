@@ -18,6 +18,12 @@ module.exports = {
   },
 
 
+  //externals的作用是从打包的bundle文件中排除依赖
+  //通过script的方式去访问这些依赖
+  externals: {
+    'jquery': 'jquery',
+    'vue': 'Vue'
+  },
 
   module: {
     rules: [
