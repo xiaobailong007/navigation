@@ -18,6 +18,9 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 //压缩js代码
 const uglifyJsWebpackPlugin = require('uglifyjs-webpack-plugin');
 
+//开启gzip
+//const CompressionPlugin = require('compression-webpack-plugin');
+
 
 
 //导出一个webpack具有特殊属性的对象
@@ -81,6 +84,18 @@ const prodConfig = {
             cleanAfterEveryBuildPatterns: ['dist']
         }),
 
+        //开启gzip
+        // new CompressionPlugin({
+        //     //asset: '[path].gz[query]',
+        //     algorithm: 'gzip',
+        //     test: new RegExp('\\.(js|css)$'),
+        //     // 只处理大于xx字节 的文件，默认：0
+        //     threshold: 10240,
+        //     // 示例：一个1024b大小的文件，压缩后大小为768b，minRatio : 0.75
+        //     minRatio: 0.8, // 默认: 0.8
+        //     // 是否删除源文件，默认: false
+        //     deleteOriginalAssets: false
+        // })
 
 
 
@@ -91,6 +106,8 @@ const prodConfig = {
     //可以删除未使用的资源。
     optimization: {
         minimizer: [
+
+
 
             // 压缩CSS
             new opimizeCss(),

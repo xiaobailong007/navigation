@@ -7,6 +7,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const devMode = process.env.NODE_ENV !== 'production'
 
+//扫描 bundle 并构建其内部内容的可视化
+//const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 
 module.exports = {
@@ -154,8 +156,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'css/[name].css', // 抽离出的css文件名
       chunkFilename: '[id].css',
-    })
+    }),
 
+    // 分析包内容
+    //new BundleAnalyzerPlugin(),
 
   ],
 
