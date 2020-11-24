@@ -107,8 +107,6 @@ const prodConfig = {
     optimization: {
         minimizer: [
 
-
-
             // 压缩CSS
             new opimizeCss(),
 

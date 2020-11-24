@@ -343,6 +343,12 @@ var boxList = new Vue({
             text: 'CSS灵感'
           },
           {
+            href: 'https://lhammer.cn/You-need-to-know-css/#/zh-cn/introduce?v=1',
+            src: require('../images/You-need-to-know-css.ico').default,
+            name: 'You-need-to-know-css',
+            text: 'CSS灵感'
+          },
+          {
             href: 'https://www.layui.com/doc/',
             src: require('../images/layui.ico').default,
             name: 'LaYui',
