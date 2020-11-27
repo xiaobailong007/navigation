@@ -504,7 +504,13 @@ var boxList = new Vue({
         name: 'Development-Community',
         class: 'icon-Community',
         text: '开发社区',
-        list: [{
+        list: [
+          {
+            href: 'https://blog.xiaolong0418.com/',
+            src: require('../images/xiaobailong.jpg').default,
+            name: '小白龙博客',
+            text: '记录每天进步的点点滴滴'
+          },{
             href: 'https://juejin.im/',
             src: require('../images/掘金.png').default,
             name: '掘金',
