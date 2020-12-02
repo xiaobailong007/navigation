@@ -125,7 +125,7 @@ module.exports = {
         //include: [resolve('src')],
         // 不会去查找的路径
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: "babel-loader?cacheDirectory=true",//?cacheDirectory=true开启缓存将转译结果缓存至文件系统
 
       }
     ]
