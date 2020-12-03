@@ -1370,6 +1370,12 @@ var boxList = new Vue({
             text: '宝塔管理界面'
           },
           {
+            href: 'http://45.133.119.107:8080',
+            src: require('../images/jenkins.ico').default,
+            name: 'JenKins',
+            text: '持续集成(CI)工具'
+          },
+          {
             href: 'http://wx.yaoqianshu888.cn/index.php/wx/Index/index.html',
             src: require('../images/wx.ico').default,
             name: '悟空微信换号系统',
