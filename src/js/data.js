@@ -504,13 +504,12 @@ var boxList = new Vue({
         name: 'Development-Community',
         class: 'icon-Community',
         text: '开发社区',
-        list: [
-          {
+        list: [{
             href: 'https://blog.xiaolong0418.com/',
             src: require('../images/xiaobailong.jpg').default,
             name: '小白龙博客',
             text: '记录每天进步的点点滴滴'
-          },{
+          }, {
             href: 'https://juejin.im/',
             src: require('../images/掘金.png').default,
             name: '掘金',
@@ -1268,6 +1267,12 @@ var boxList = new Vue({
             text: '有信用卡可以白嫖一年'
           },
           {
+            href: 'https://www.ucloud.cn/',
+            src: require('../images/UCloud.ico').default,
+            name: 'UCloud',
+            text: '建站服务器'
+          },
+          {
             href: 'https://www.vultr.com/?ref=8439176-6G',
             src: require('../images/vultr.png').default,
             name: 'Vultr',
@@ -1370,7 +1375,7 @@ var boxList = new Vue({
             text: '宝塔管理界面'
           },
           {
-            href: 'http://45.133.119.107:8080',
+            href: 'http://152.32.240.226:8080',
             src: require('../images/jenkins.ico').default,
             name: 'JenKins',
             text: '持续集成(CI)工具'
