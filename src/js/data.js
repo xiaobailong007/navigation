@@ -1365,7 +1365,7 @@ var boxList = new Vue({
           {
             href: 'http://152.32.240.226:43990/long99',
             src: require('../images/宝塔面板.ico').default,
-            name: '服务器-小白龙高主',
+            name: '服务器-小白龙主',
             text: '宝塔管理界面'
           },
           {
