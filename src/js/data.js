@@ -1350,12 +1350,12 @@ var boxList = new Vue({
             name: '小米路由器',
             text: '后台管理'
           },
-          {
-            href: 'https://nodequery.com/',
-            src: require('../images/NodeQuery.ico').default,
-            name: 'NodeQuery',
-            text: '多服务器监控界面'
-          },
+          // {
+          //   href: 'https://nodequery.com/',
+          //   src: require('../images/NodeQuery.ico').default,
+          //   name: 'NodeQuery',
+          //   text: '多服务器监控界面'
+          // },
           {
             href: 'http://45.133.119.107:43990/',
             src: require('../images/宝塔面板.ico').default,
