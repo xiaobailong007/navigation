@@ -880,6 +880,12 @@ var boxList = new Vue({
             text: '尔等可敢一战',
           },
           {
+            href: 'https://www.52doutu.cn/',
+            src: require('../images/我爱斗图.ico').default,
+            name: '我爱斗图',
+            text: '尔等可敢一战',
+          },
+          {
             href: 'https://weishi.iiilab.com',
             src: require('../images/短视频解析.png').default,
             name: '短视频解析',
