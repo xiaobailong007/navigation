@@ -716,6 +716,12 @@ var boxList = new Vue({
             text: '后端数据模拟',
           },
           {
+            href: 'http://easymock.xiaolong0418.com:7300',
+            src: require('../images/Easy-Mock.ico').default,
+            name: 'Easy-Mock',
+            text: '个人后端数据模拟',
+          },
+          {
             href: 'https://caniuse.com/',
             src: require('../images/caniuse.png').default,
             name: 'caniuse',
