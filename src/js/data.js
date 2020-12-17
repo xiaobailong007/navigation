@@ -312,6 +312,12 @@ var boxList = new Vue({
             text: 'IT学习资源',
           },
           {
+            href: 'http://www.51xuebc.com/portal.php',
+            src: require('../images/程序员.ico').default,
+            name: '程序员',
+            text: 'IT学习资源',
+          },
+          {
             href: 'https://pan.baidu.com/disk/home?#/all?path=%2F&vmode=list',
             src: require('../images/百度网盘.ico').default,
             name: '百度网盘',
@@ -446,6 +452,13 @@ var boxList = new Vue({
             src: require('../images/Element.ico').default,
             name: 'Element',
             text: 'PC响应式框架',
+          },
+          {
+            href:
+              'https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/#%E5%8A%9F%E8%83%BD',
+            src: require('../images/vue-element-admin.ico').default,
+            name: 'Element',
+            text: '后台前端解决方案',
           },
           {
             href: 'https://2x.antdv.com/docs/vue/introduce-cn/',
