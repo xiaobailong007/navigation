@@ -457,7 +457,7 @@ var boxList = new Vue({
             href:
               'https://panjiachen.gitee.io/vue-element-admin-site/zh/guide/#%E5%8A%9F%E8%83%BD',
             src: require('../images/vue-element-admin.ico').default,
-            name: 'Element',
+            name: 'vue-element-admin',
             text: '后台前端解决方案',
           },
           {
